@@ -15,7 +15,6 @@ RUN apt-get update && \
         libsodium-dev \
         libpng-dev \
         libfreetype6-dev \
-        libjpeg62-turbo-dev \
         zlib1g-dev \
         libicu-dev \
         libxml2-dev \
