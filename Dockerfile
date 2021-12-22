@@ -9,16 +9,7 @@ RUN apt-get update && \
      apt-get install -y \
         wget \
         sudo \
-        dnsutils \
-        libmagickwand-dev \
-        libzip-dev \
-        libsodium-dev \
-        libpng-dev \
-        libfreetype6-dev \
-        zlib1g-dev \
-        libicu-dev \
-        libxml2-dev \
-        g++
+        
 
 ###########################
 # Install build tools things
